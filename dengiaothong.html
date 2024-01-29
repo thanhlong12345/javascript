@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>đèn giao thông </title>
+  <style>
+ 
+    body {
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .traffic-light {
+      width: 100px;
+      height: 300px;
+      background-color: #333;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .light {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .red {
+      background-color: #f00;
+    }
+    .yellow {
+      background-color: #ff0;
+    }
+    .green {
+      background-color: #0f0;
+    }
+    .on {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0% {
+        box-shadow: 0 0 0px 0px #f00;
+      }
+      50% {
+        box-shadow: 0 0 10px 5px #f00;
+      }
+      100% {
+        box-shadow: 0 0 0px 0px #f00;
+      }
+    }
+    
+   
+  </style>
+</head>
+<body>
+  <div class="traffic-light">
+    <div class="light red on"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+  </div>
+</body>
+</html>
